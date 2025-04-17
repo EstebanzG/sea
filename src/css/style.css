@@ -5,6 +5,8 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
     background: linear-gradient(
             #4C839F 0%,
             #EAF7F0 60%,
