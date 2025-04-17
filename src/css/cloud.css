@@ -1,0 +1,56 @@
+@keyframes cloud {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(110vw);
+    }
+}
+
+.sky .cloud {
+    animation: cloud 120s linear infinite;
+    position: relative;
+    background: white;
+    border-radius: 50px 50px 30px 30px;
+    cursor: pointer;
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 80%;
+        background: white;
+        border-radius: 50px;
+    }
+    &::before {
+        left: -40%;
+        top: 15%;
+    }
+    &::after {
+        left: 80%;
+        top: 15%;
+    }
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+.cloud1 {
+    top: 10%;
+    left: 0;
+    width: 70px;
+    height: 50px;
+}
+
+.cloud2 {
+    top: 20%;
+    left: 10%;
+    width: 80px;
+    height: 60px;
+}
+
+.cloud3 {
+    top: 5%;
+    left: 75%;
+    width: 130px;
+    height: 110px;
+}

@@ -1,0 +1,27 @@
+@import 'cloud.css';
+@import 'ship.css';
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(
+            #4C839F 0%,
+            #EAF7F0 60%,
+            #7EB9C3 60%,
+            #285661 100%
+    );
+}
+
+.sky {
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.sea {
+    position: relative;
+    width: 100%;
+    height: 40%;
+}
+
